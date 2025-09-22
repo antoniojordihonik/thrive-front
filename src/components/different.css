@@ -1,0 +1,35 @@
+.diff-background {
+  width: 100%;
+  background: #008F7A;
+}
+
+.diff-title {
+  text-align: center;
+  color: #f9f9f9;
+  font-size: 2.5rem;
+  padding-top: 4rem;
+  font-weight: 600;
+  }
+
+.diff-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  color: #f9f9f9;
+  padding: 4rem;
+  gap: 2rem;
+}
+
+.left-rectangle,
+.right-rectangle {
+  flex: 1;
+  border:none;
+  border-radius: 0;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

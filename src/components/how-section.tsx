@@ -36,9 +36,9 @@ export default function HowSection({ promoQuery = "" }) {
             <p className="how-card-description">{t("landing.howTextThree")}</p>
           </div>
         </div>
-        <Link to={`/login${promoQuery}`} className="how-button">
+        <a to={`/login${promoQuery}`} className="how-button">
           {t("landing.howBtn")}
-        </Link>
+        </a>
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import './App.css'
 import Hero from './components/hero.tsx'
 import Header from './components/navbar.tsx'
 import HowSection from './components/how-section.tsx'
-
+import Different from './components/different.tsx'
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
       <Header/>
       <Hero/>
       <HowSection/>
+      <Different/>
 
     </div>
   )
