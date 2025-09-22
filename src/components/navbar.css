@@ -1,0 +1,155 @@
+.navbar-background {
+    background: #252525;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5vw;
+    color: #f6f6f6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    max-width: 1400px;
+}
+
+.navbar-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+    outline: none;
+}
+
+.logo:hover {
+  outline: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.nav-links a {
+    color: #f6f6f6;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ff9e;
+}
+
+.login-btn {
+    font-family: Raleway, sans-serif;
+    font-weight: 450;
+    font-size: 18px;
+    background: #252525;
+    color: #00ff9e;
+    padding: 0.4rem 2rem;
+    border: 2px solid #00ff9e;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #454545;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.hamburger.active {
+    transform: rotate(90deg);
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #00ff9e;
+    border-radius: 2px;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #252525;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    border: 2px solid #00ff9e;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 1rem;
+    z-index: 99;
+}
+
+.mobile-menu a {
+    font-family: Raleway, sans-serif;
+    color: #f6f6f6;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 300px;
+    transition: color 0.5s ease;
+}
+
+.mobile-menu a:hover {
+    color: #00ff9e;
+}
+
+.mobile-menu .login-btn {
+    padding: 0.4rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        padding: 0 5vw;
+    }
+    .nav-links,
+    .login-btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    
+    .logo {
+        height: 25px;
+        width: auto;
+    }
+}

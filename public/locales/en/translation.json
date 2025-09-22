@@ -1,0 +1,13 @@
+{
+  "landing": {
+    "navbarHome": "Home",
+    "navbarService": "Service",
+    "navbarContact": "Contact Us",
+    "navbarBtn": "Login",
+    "heroTitle": "Your",
+    "heroTitleHigh": "Expert Guide",
+    "heroSecondTitle": "Anywhere Anytime",
+    "heroText": "With ThriveAlive.Ai, you get a consultant in your pocket: instant access to structured tools and subject-matter experts to help you chart your course, take action, and reach your goals",
+    "heroBtn": "Start Your Journey"
+  }
+}
