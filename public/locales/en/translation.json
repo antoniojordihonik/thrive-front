@@ -8,6 +8,14 @@
     "heroTitleHigh": "Expert Guide",
     "heroSecondTitle": "Anywhere Anytime",
     "heroText": "With ThriveAlive.Ai, you get a consultant in your pocket: instant access to structured tools and subject-matter experts to help you chart your course, take action, and reach your goals",
-    "heroBtn": "Start Your Journey"
+    "heroBtn": "Start Your Journey",
+     "howTitle": "How ThriveAlive.Ai Works",
+    "howCardsOne": "Reflect on What Matters Most",
+    "howTextOne": "Discover the values, aspirations, and motivations that guide your life.",
+    "howCardsTwo": "Gain Personalized Insights",
+    "howTextTwo": "Receive AI-powered guidance from brand expert, Pete Canalichio, tailored to your unique journey.",
+    "howCardsThree": "Align Wealth With Purpose",
+    "howTextThree": "Use the insights to shape not just your finances, but your future.",
+    "howBtn": "Start the Experience"
   }
 }

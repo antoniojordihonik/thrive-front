@@ -8,6 +8,7 @@ export default function Hero({ promoQuery = "" }) {
 
   return (
     <section className="hero">
+      <div className="hero-content">
       <h1 className="title">
         {t("landing.heroTitle")}{" "}
         <span className="highlight">{t("landing.heroTitleHigh")}</span>{" "}
@@ -19,6 +20,7 @@ export default function Hero({ promoQuery = "" }) {
       <a className="journey-btn">
         {t("landing.heroBtn")}
       </a>
+    </div>
     </section>
   );
 }
