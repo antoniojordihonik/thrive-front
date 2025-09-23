@@ -35,11 +35,14 @@
 .diff-item {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+
 }
 
 .diff-icon {
   margin-top: 1rem;
+  margin-bottom: 5rem;
   width: 2rem; 
   aspect-ratio: 1 / 1;
   display: flex;
@@ -49,12 +52,14 @@
 }
 
 .diff-text h3 {
-  margin-top: 1rem;
+  margin: 0;
+  margin-bottom: 0rem;
 }
 
 .diff-text p {
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
-  width: 46ch;
+  width: 44ch;
+  text-align: justify;
 }

@@ -1,47 +1,47 @@
-.landing-page h1 {
+h1 {
   font-family: Raleway, sans-serif;
   font-weight: 600;
   font-size: 30px;
 }
 
-.landing-page h2 {
+h2 {
   font-family: Roboto, sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
 
-.landing-page h3 {
+h3 {
   font-family: Raleway, sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
 
-.landing-page p {
+p {
   font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
 
 @media (max-width: 768px) {
-  .landing-page h1 {
+  h1 {
     font-family: Raleway, sans-serif;
     font-weight: 600;
     font-size: 26px;
   }
 
-  .landing-page h2 {
+  h2 {
     font-family: Roboto, sans-serif;
     font-weight: 600;
     font-size: 16px;
   }
 
-  .landing-page h3 {
+  h3 {
     font-family: Raleway, sans-serif;
     font-weight: 600;
     font-size: 20px;
   }
 
-  .landing-page p {
+  p {
     font-family: Raleway, sans-serif;
     font-weight: 300;
     font-size: 20px;

@@ -9,7 +9,7 @@
     "heroSecondTitle": "Anywhere Anytime",
     "heroText": "With ThriveAlive.Ai, you get a consultant in your pocket: instant access to structured tools and subject-matter experts to help you chart your course, take action, and reach your goals",
     "heroBtn": "Start Your Journey",
-     "howTitle": "How ThriveAlive.Ai Works",
+    "howTitle": "How ThriveAlive.Ai Works",
     "howCardsOne": "Reflect on What Matters Most",
     "howTextOne": "Discover the values, aspirations, and motivations that guide your life.",
     "howCardsTwo": "Gain Personalized Insights",
@@ -30,6 +30,8 @@
     "differentFifthTitle": "Professional Expertise at a Fraction of the Cost",
     "differentFifthText": "Get the caliber of advice you’d expect from top-tier consultants—but without the traditional price tag.",
     "differentSixthTitle": "Designed for Trust and Privacy",
-    "differentSixthText": "Built from the ground up for sensitive contexts—your data stays secure, your experience stays respectful, and your progress stays your own."
+    "differentSixthText": "Built from the ground up for sensitive contexts—your data stays secure, your experience stays respectful, and your progress stays your own.",
+    "mentorOneText": "Pete Canalichio is an award-winning author of the Amazon #1 New Release, \"Expand, Grow, Thrive\" (2018), “Strategic Brand Licensing” (2024) and a TEDx speaker. He has worked in brand strategy, expansion and licensing for the past 20 years for Coca-Cola, Newell Brands and most recently, BrandAlive, a Service-Disabled Veteran Owned Small Business.",
+    "mentorTwoText": "Pete believes people deserve to be delighted with new and innovative products and services from brands they love. He also believes every brand owner and organization has the right to expand, grow and ultimately thrive. That is why he has made it his mission to develop tools, talks and training designed to inspire, educate and empower his clients to write a better story, and from it, to achieve all that is possible"
   }
 }

@@ -3,6 +3,7 @@ import Hero from './components/hero.tsx'
 import Header from './components/navbar.tsx'
 import HowSection from './components/how-section.tsx'
 import Different from './components/different.tsx'
+import Mentors from './components/mentors.tsx'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Hero/>
       <HowSection/>
       <Different/>
+      <Mentors/>
 
     </div>
   )
