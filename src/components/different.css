@@ -14,12 +14,11 @@
 .diff-section {
   max-width: 1400px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  display: flex; 
   color: #f9f9f9;
-  padding: 4rem;
-  gap: 2rem;
+  padding: 2rem 4rem; 
+  gap: 1.5rem;
+  justify-content: space-between;
 }
 
 .left-rectangle,
@@ -33,3 +32,29 @@
   justify-content: center;
 }
 
+.diff-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.diff-icon {
+  margin-top: 1rem;
+  width: 2rem; 
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.diff-text h3 {
+  margin-top: 1rem;
+}
+
+.diff-text p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 46ch;
+}

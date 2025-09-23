@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import How1 from "/how-1.svg";
 import How2 from "/how-2.svg";
 import How3 from "/how-3.svg";
-import { Link } from "react-router-dom";
 
 export default function HowSection({ promoQuery = "" }) {
   const { t } = useTranslation();
