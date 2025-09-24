@@ -1,0 +1,104 @@
+.plans-background {
+  width: 100%;
+  background: #262626;
+  padding: 4rem 0rem;
+  text-align: center;
+}
+
+.plans-background h1 {
+  color: #f6f6f6;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.plans-background p {
+  color: #f6f6f6;
+  margin: 0;
+  width: 98ch;
+  margin: auto;
+}
+
+.plans-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  color: #f9f9f9;
+  padding: 4rem;
+  gap: 2rem;
+}
+
+.individual-plan,
+.organization-plan {
+  flex: 1;
+  border: 1px solid #f6f6f6;
+  border-radius: 30px;
+  background-color: #252525;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  background-position: center;
+  min-height: 200px;
+  width: 100%;
+}
+
+.individual-plan h3,
+.organization-plan h3 {
+  color: #252525;
+  margin: 2rem;
+}
+
+.individual-plan p,
+.organization-plan p {
+  color: #252525;
+  width: 90%;          
+  margin: 1ch auto 0;  
+  text-align: left;    
+}
+
+.plans-list {
+  margin: 5ch auto 0;
+  margin-left: 50px;  
+  padding: 0;
+  width: 90%;          
+  list-style-position: outside;
+  text-align: left;
+  opacity: 0.75;
+  margin-bottom: 2rem;
+}
+
+.plans-list li {
+  color: #252525;
+  list-style-type: disc;
+  margin: 0.5em 0;
+  line-height: 1.5;
+  padding: 0;
+}
+
+.plan-btn {
+  width: 50%;
+  margin: auto;
+  margin-top: auto;           
+  margin-bottom: 2rem;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background: #00ff9e;
+  color: #252525;
+  padding: 0.4rem 1.4rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease,
+              background-color 0.5s ease, filter 0.1s ease-in, 
+              border-color 0.3s ease;
+}
+
+.plan-btn:hover {
+  transform: scale(1.02);
+  background-color: #a7ffdd;
+  border-color: #a7ffdd;
+}

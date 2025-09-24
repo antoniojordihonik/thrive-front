@@ -1,0 +1,153 @@
+.modules-background {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.modules-title {
+  color: #252525;
+  margin: 0;
+}
+
+.modules-subtitle {
+  color: #008F7A;
+  margin: 0;
+}
+
+.modules-section {
+  padding: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto; 
+}
+
+.modules-cards {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+}
+
+.module-card-container {
+  display: flex;
+  flex: 1;
+  height: clamp(300px, 60vh, 450px);
+  perspective: 1400px;
+  margin: 0;
+}
+
+.module-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.4,0.2,0.2,1);
+  transform-style: preserve-3d;
+  transition: 1s ease-in-out;
+}
+
+.module-card-container:hover .module-card {
+  transform: rotateY(180deg);
+}
+
+.module-card-frontside,
+.module-card-backside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: left;
+  text-align: left;
+  border: solid 1px #9c9c9c;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+}
+
+.module-card-backside {
+  background-color: #008F7A;
+  transform: rotateY(180deg);
+  padding: 0.5rem;
+}
+
+.module-card-backside h3 {
+  color: #fff;
+  margin: 0;
+  margin-top: 0.5ch;
+  margin-left: 11px;
+}
+
+.module-card-backside p {
+  color: #fff;
+  margin: 0.5ch;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12pt;
+  margin-left: 11px;
+  margin-right: 11px;
+  line-height: 1.75ch;
+}
+
+.module-picture {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: 1px solid #252525;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #008F7A;
+}
+
+.module-picture img { 
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  opacity: 0.7; 
+}
+
+.module-card-frontside h3 {
+  margin-top: 1rem;
+  color: #252525;
+  margin-left: 10px;
+}
+
+.module-card-frontside p {
+  margin: 0;
+  line-height: 2ch;
+  color: #008F7A;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+}
+
+.modules-button {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background: #252525;
+  color: #00ff9e;
+  padding: 0.4rem 1.4rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease,
+    filter 0.1s ease-in, border-color 0.3s ease;
+  }
+
+.modules-button:hover {
+  transform: scale(1.02);
+  background: #454545;
+}

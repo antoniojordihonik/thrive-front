@@ -1,20 +1,25 @@
-.mentor-background {
+.mentors-background {
   width: 100%;
-  background: #f6f6f6;
+  background: none;
+  padding: 4rem 0rem;
+  z-index: -2;
 }
 
 .mentors-title {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0;
   color: #252525;
+  align-items: center;
 }
 
 .mentors-subtitle {
   text-align: center;
   margin-top: 0.5rem;
   color: #000000;
-  opacity: 0.5;
-  
+  opacity: 0.5;  
+  width: 75ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mentor-section {
@@ -23,10 +28,24 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  color: #f9f9f9;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   border-radius: 0;
   gap: 1rem;
+  position: relative;
+}
+
+.mentor-section::after {
+  content: '';
+  top: 10;
+  left: 10;
+  position: absolute; /* Change to absolute */
+  width: 89%;        /* Full width of section */
+  max-width: 1400px; /* Match section max-width */
+  height: 92%;
+  background-color: #008F7A;
+  z-index: -1;         /* Behind content */
+  border: none;
+  border-radius: 0;
 }
 
 .mentor-left {
@@ -77,3 +96,25 @@
 
 @media (max-width: 768px) {
 }
+
+
+/*
+
+      <div className="mentor-section">
+          <div className="mentor-right">
+                       <div className="mentor-container">
+            <h3 className="mentor-name">Pete Canalichio</h3>
+            <p className="mentor-text">
+              {t("landing.mentorOneText")}
+              <br />
+              <br />
+              {t("landing.mentorTwoText")}
+            </p>
+            </div>
+          </div>
+          <div className="mentor-left">
+              <img src="/mentor1.jpg" alt="Pete Canalichio" />
+          </div>
+      </div>
+
+*/

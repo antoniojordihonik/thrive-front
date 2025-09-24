@@ -4,6 +4,8 @@ import Header from './components/navbar.tsx'
 import HowSection from './components/how-section.tsx'
 import Different from './components/different.tsx'
 import Mentors from './components/mentors.tsx'
+import Modules from './components/modules.tsx'
+import Plans from './components/plans.tsx'
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
       <HowSection/>
       <Different/>
       <Mentors/>
+      <Modules/>
+      <Plans/>
 
     </div>
   )

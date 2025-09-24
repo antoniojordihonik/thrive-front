@@ -5,7 +5,7 @@ import How1 from "/how-1.svg";
 import How2 from "/how-2.svg";
 import How3 from "/how-3.svg";
 
-export default function HowSection({ promoQuery = "" }) {
+export default function HowSection() {
   const { t } = useTranslation();
 
   return (
@@ -35,7 +35,7 @@ export default function HowSection({ promoQuery = "" }) {
             <p className="how-card-description">{t("landing.howTextThree")}</p>
           </div>
         </div>
-        <a to={`/login${promoQuery}`} className="how-button">
+        <a className="how-button">
           {t("landing.howBtn")}
         </a>
       </div>
