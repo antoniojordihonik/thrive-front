@@ -1,0 +1,127 @@
+.faq-background {
+  background-color: #f6f6f6;
+  padding: 2rem 4rem;
+  align-items: center;
+}
+
+.faq-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 10rem;
+  align-items: flex-start;
+}
+
+.faq-accordion {
+  background: none;
+  max-width: 700px;
+  margin: 2rem 0;      
+  font-family: Raleway, sans-serif;
+  text-align: left;    
+  flex: 2 1 0;
+  min-width: 0;
+}
+
+.faq-accordion h1 {
+  margin-bottom: 2rem;
+  color: #252525;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #252525;
+  padding: 1rem 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-arrow {
+  transition: transform 0.3s ease-out;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.faq-arrow.open {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1), padding 0.5s, opacity 0.5s;
+  padding: 0 0;
+  opacity: 0;
+}
+
+.faq-answer.open {
+  font-size: 1rem;
+  max-height: 200px;
+  padding: 0.5rem 0 1rem 0;
+  opacity: 1;
+}
+
+.faq-answer p {
+  margin: 0.5rem 0 1rem 0;
+  color: #252525;
+  font-size: 1rem;
+}
+
+.more-questions {
+  flex: 1 1 300px;
+  background: none;
+  padding: 0;
+  margin-top: 2.5rem;
+  max-width: 350px;
+}
+
+.more-questions-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #252525;
+  margin-bottom: 1rem;
+}
+
+.more-questions-text {
+  color: #252525;
+  margin-bottom: 1.5rem;
+  width: 25ch;
+}
+
+.more-questions-btn {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background: #00ff9e;
+  color: #252525;
+  padding: 0.4rem 1.4rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease,
+              background-color 0.5s ease, filter 0.1s ease-in, 
+              border-color 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.more-questions-btn:hover {
+  transform: scale(1.02);
+  background-color: #a7ffdd;
+  border-color: #a7ffdd;
+}

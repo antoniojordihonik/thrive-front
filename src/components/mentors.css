@@ -38,12 +38,12 @@
   content: '';
   top: 10;
   left: 10;
-  position: absolute; /* Change to absolute */
-  width: 89%;        /* Full width of section */
-  max-width: 1400px; /* Match section max-width */
+  position: absolute; 
+  width: 89%;        
+  max-width: 1400px; 
   height: 92%;
   background-color: #008F7A;
-  z-index: -1;         /* Behind content */
+  z-index: -1;         
   border: none;
   border-radius: 0;
 }

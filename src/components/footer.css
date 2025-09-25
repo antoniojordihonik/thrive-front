@@ -1,0 +1,109 @@
+.footer-background {
+  background: #000;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  padding: 4rem;
+}
+
+.footer-container{
+  max-width: 1400px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3rem 0 1.5rem 0;
+}
+
+.footer-experts-link {
+  color: #fff;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.footer-arrow {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 2px solid #fff;
+  margin: 0 0 2rem 0;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer-logo {
+  width: 180px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-socials img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.2s;
+}
+
+.footer-socials img:hover {
+  filter: brightness(0.7) invert(0.7) sepia(1) hue-rotate(120deg);
+}
+
+.footer-links {
+  display: flex;
+  gap: 6rem;
+  font-size: 1rem;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #6cffb2;
+}
+
+.footer-bottom {
+  text-align: left;
+  padding: 1rem 0 1rem 0;
+  font-size: 1rem;
+  color: #fff;
+  max-width: 1400px;
+  margin: 0 auto;
+}
