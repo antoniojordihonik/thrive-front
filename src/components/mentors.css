@@ -1,7 +1,7 @@
 .mentors-background {
   width: 100%;
   background: none;
-  padding: 4rem 0rem;
+  padding: 4rem 0;
   z-index: -2;
 }
 
@@ -26,26 +26,23 @@
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  padding: 1rem 4rem;
-  border-radius: 0;
-  gap: 1rem;
   position: relative;
+  z-index: 1;
+  padding: 1rem 4rem;
+  gap: 1rem;
 }
 
-.mentor-section::after {
+.mentor-section::before {
   content: '';
-  top: 10;
-  left: 10;
-  position: absolute; 
-  width: 89%;        
-  max-width: 1400px; 
+  position: absolute;
+  left: 5%;
+  top: 4%;
+  width: 90%;
   height: 92%;
-  background-color: #008F7A;
-  z-index: -1;         
-  border: none;
+  background: #008F7A;
   border-radius: 0;
+  z-index: -100;
+  pointer-events: none;
 }
 
 .mentor-left {

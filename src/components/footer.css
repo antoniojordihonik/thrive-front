@@ -2,40 +2,63 @@
   background: #000;
   color: #fff;
   font-family: 'Raleway', sans-serif;
-  padding: 4rem;
+  padding: 2rem 4rem;
 }
 
-.footer-container{
+.footer-container {
   max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .footer-top {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 3rem 0 1.5rem 0;
+  transition: 0.3s ease;
 }
 
 .footer-experts-link {
   color: #fff;
   font-size: 2.5rem;
-  text-decoration: underline;
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 2rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: Raleway, sans-serif;
+  font-weight: 100;
+  max-width: 1400px;
+  margin-bottom: 2rem;
+}
+
+.footer-meet-experts {
+  color: #fff;
+  font-size: 2.5rem;
+  text-decoration: 1px underline;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: Raleway , sans-serif;
+  font-weight: 100;
 }
 
 .footer-arrow {
   font-size: 3rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
+  text-decoration: none;
+}
+
+.footer-top:hover {
+  scale: 1.02;
+  opacity: 0.5;
 }
 
 .footer-divider {
   border: none;
-  border-top: 2px solid #fff;
-  margin: 0 0 2rem 0;
+  border-top: 1px solid #f6f6f6;
+  margin: 0;
+  max-width: 1400px;
 }
 
 .footer-main {
@@ -53,27 +76,12 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
+  align-self: center;
 }
 
 .footer-logo {
-  width: 180px;
-  margin-bottom: 1.5rem;
-}
-
-.footer-socials {
-  display: flex;
-  gap: 2rem;
-}
-
-.footer-socials img {
-  width: 32px;
-  height: 32px;
-  filter: brightness(0) invert(1);
-  transition: filter 0.2s;
-}
-
-.footer-socials img:hover {
-  filter: brightness(0.7) invert(0.7) sepia(1) hue-rotate(120deg);
+  width: 250px;
+  margin-bottom: 0;
 }
 
 .footer-links {
@@ -89,11 +97,14 @@
 }
 
 .footer-links a {
-  color: #fff;
+  color: #f6f6f6;
   text-decoration: none;
-  letter-spacing: 1px;
-  transition: color 0.2s;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s;
 }
+
 
 .footer-links a:hover {
   color: #6cffb2;
@@ -105,5 +116,6 @@
   font-size: 1rem;
   color: #fff;
   max-width: 1400px;
+  font-weight: 100;
   margin: 0 auto;
 }

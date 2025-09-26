@@ -1,7 +1,6 @@
 .clients-background {
   width: 100%;
   background: #ffffff;
-
 }
 
 .clients-title {
@@ -10,74 +9,49 @@
   text-align: left;
   color: #252525;
   padding: 4rem 4rem 0 4rem;
-  }
+}
 
-  .clients-title h3, .clients-title h1 {
+.clients-title h3,
+.clients-title h1 {
   font-family: Bodoni Moda, serif;
-  }
+}
 
-  .clients-title h3 {
+.clients-title h3 {
   font-size: 2rem;
   margin: 0;
-  }
+}
 
-  .clients-title h1 {
-    margin: 0;
-    font-size: 4rem;
-  }
+.clients-title h1 {
+  margin: 0;
+  font-size: 4rem;
+}
 
 .clients-section {
   max-width: 1400px;
   margin: 0 auto;
-  display: flex; 
+  display: flex;
   flex-direction: column;
-  color: #f9f9f9;
-  padding: 2rem 4rem; 
+  color: #252525;
+  padding: 2rem 4rem;
   gap: 1.5rem;
-  justify-content: space-between;
 }
 
 .clients-container {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  background-color: #f6f6f6;
   gap: 2rem;
   width: 100%;
-  
-}
-
-
-
-.clients-card {
-  flex: 1;
-  background-color: #ffffff;
-  border-radius: 15px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  text-align: left;
-  border: solid 2px #757575;
-  max-width: 450px;   
-  width: 100%;
-  opacity: 1;
-  transition: 0.3s ease;
 }
 
 .clients-card:hover {
   background-color: #f6f6f6;
-  border: solid 2px #008F7A;
-
+  border: solid 2px #008f7a;
 }
 
 .clients-icon {
-  width: 2rem; 
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 0;
+  width: 2rem;
+  margin: 1rem 0;
   aspect-ratio: 1 / 1;
   display: flex;
   align-items: flex-start;
@@ -85,34 +59,9 @@
   flex-shrink: 0;
 }
 
-.clients-text p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: justify;
-  color: #252525;
-  margin-bottom: 1rem;
-}
-
-.clients-card a {
-  font-size: 1rem;
-  font-style: italic;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  text-align: left;
-  color: #5e5959;
-  font-weight: bold;
-  cursor: pointer;}
-
-.clients-readmore:hover {
-  text-decoration: underline;
-  color: #000000;
-}
-
 .client-name {
   color: #252525;
-  margin: 0;
-  margin-top: 1rem;
+  margin: 1rem 0 0 0;
 }
 
 .client-role {
@@ -122,17 +71,32 @@
   margin: 0;
 }
 
-.clients-btn {
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center;
+.readmore-btn {
   text-decoration: none;
-  align-items: center;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 0;
+  display: block;
+  margin: 0 0 0 auto;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background: #f6f6f6;
+  color: #252525;
+  padding: 0.2rem 1rem;
+  border: solid 2px #757575;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
+}
+
+.readmore-btn:hover{
+  background-color: #f6f6f6;
+  border: solid 2px #008f7a;
+  transform: scale(1.02);
+}
+
+.clients-btn {
+  text-decoration: none;
+  display: block;
+  margin: 2rem auto 0 auto;
   font-family: Raleway, sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -142,11 +106,55 @@
   border: none;
   border-radius: 2rem;
   cursor: pointer;
-  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease,
-  filter 0.1s ease-in, border-color 0.3s ease;
-  }
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
+}
 
 .clients-btn:hover {
   transform: scale(1.02);
   background: #454545;
+}
+
+.clients-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 1rem;
+  border: solid 2px #757575;
+  max-width: 450px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.clients-text p {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  color: #252525;
+  opacity: 0.8;
+  transition: max-height 0.6s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
+  overflow: hidden;
+  max-height: 6.5em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  position: relative;
+}
+
+.clients-text p.expanded {
+  max-height: 1000px;
+  opacity: 1;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+
+.clients-text p.collapsed::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: none;
+  padding-left: 0.2em;
 }

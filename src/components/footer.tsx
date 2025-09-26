@@ -1,14 +1,19 @@
 import React from "react";
 import "./footer.css";
+import "../styles.css"
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+
+  const { t } = useTranslation(); 
+
   return (
     <footer className="footer-background">
       <div className="footer-container">
       <div className="footer-top">
         <div className="footer-experts">
           <a href="/mentors" className="footer-experts-link">
-            <span>Meet Your Experts</span>
+            <span className="footer-meet-experts">{t("landing.footerMeetExperts")}</span>
             <span className="footer-arrow">&#8594;</span>
           </a>
         </div>
@@ -16,26 +21,20 @@ export default function Footer() {
       <hr className="footer-divider" />
       <div className="footer-main">
         <div className="footer-brand">
-          <img src="/logo.svg" alt="ThriveAlive Logo" className="footer-logo" />
-          <div className="footer-socials">
-            <a href="#"><img src="/icon-instagram.svg" alt="Instagram" /></a>
-            <a href="#"><img src="/icon-facebook.svg" alt="Facebook" /></a>
-            <a href="#"><img src="/icon-linkedin.svg" alt="LinkedIn" /></a>
-            <a href="#"><img src="/icon-tiktok.svg" alt="TikTok" /></a>
-          </div>
+          <img src="/thrive-alive-logo.svg" alt="ThriveAlive Logo" className="footer-logo" />
         </div>
         <div className="footer-links">
           <div>
-            <a href="#">HOME</a>
-            <a href="#">ABOUT US</a>
-            <a href="#">SERVICES</a>
-            <a href="#">FAQ</a>
+            <a href="#">{t("landing.footerHome")}</a>
+            <a href="#">{t("landing.footerAboutUs")}</a>
+            <a href="#">{t("landing.footerServices")}</a>
+            <a href="#">{t("landing.footerFAQ")}</a>
           </div>
           <div>
-            <a href="#">TESTIMONIALS</a>
-            <a href="#">CONTACT US</a>
-            <a href="#">JOIN THE CHANGE</a>
-            <a href="#">PRIVACY POLICY</a>
+            <a href="#">{t("landing.footerTestimonials")}</a>
+            <a href="#">{t("landing.footerContactUs")}</a>
+            <a href="#">{t("landing.footerJoinTheChange")}</a>
+            <a href="#">{t("landing.footerPrivacyPolicy")}</a>
           </div>
         </div>
       </div>

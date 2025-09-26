@@ -14,7 +14,7 @@ export default function Modules() {
     <section className="modules-background">
       <div className="modules-section">
         <h3 className="modules-subtitle">{t("landing.modulesTitle")}</h3>
-        <h1 className="modules-title">{t("landing.modulesSubitle")}</h1>
+        <h1 className="modules-title">{t("landing.modulesSubtitle")}</h1>
         <div className="modules-cards">
 
         <div className="module-card-container">
